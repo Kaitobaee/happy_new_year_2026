@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Lora', Georgia, 'Times New Roman', serif;
-    background: linear-gradient(135deg, #0a0015 0%, #1a0a2e 30%, #16082a 60%, #0d0520 100%);
+    background: linear-gradient(135deg, #2d1b33 0%, #3d1f3f 30%, #4a2248 60%, #2d1b33 100%);
     color: #fff;
     overflow-x: hidden;
     min-height: 100vh;
     position: relative;
 }
 
-/* ============ BACKGROUND STARS ============ */
+/* ============ BACKGROUND STARS (tiny pink & white) ============ */
 body::before {
     content: '';
     position: fixed;
@@ -23,19 +23,19 @@ body::before {
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(2px 2px at 20px 30px, #fff, transparent),
-        radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+        radial-gradient(2px 2px at 20px 30px, #ffb6c1, transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255,182,193,0.8), transparent),
         radial-gradient(1px 1px at 90px 40px, #fff, transparent),
-        radial-gradient(1.5px 1.5px at 130px 80px, rgba(255,255,255,0.6), transparent),
-        radial-gradient(2px 2px at 160px 30px, #fff, transparent),
+        radial-gradient(1.5px 1.5px at 130px 80px, rgba(255,192,203,0.6), transparent),
+        radial-gradient(2px 2px at 160px 30px, #ffc0cb, transparent),
         radial-gradient(1px 1px at 200px 60px, rgba(255,255,255,0.7), transparent),
-        radial-gradient(1.5px 1.5px at 20px 110px, #fff, transparent),
-        radial-gradient(2px 2px at 60px 150px, rgba(255,255,255,0.8), transparent),
+        radial-gradient(1.5px 1.5px at 20px 110px, #ffb6c1, transparent),
+        radial-gradient(2px 2px at 60px 150px, rgba(255,182,193,0.8), transparent),
         radial-gradient(1px 1px at 110px 130px, #fff, transparent),
-        radial-gradient(1.5px 1.5px at 150px 160px, rgba(255,255,255,0.6), transparent),
-        radial-gradient(2px 2px at 180px 120px, #fff, transparent),
+        radial-gradient(1.5px 1.5px at 150px 160px, rgba(255,192,203,0.6), transparent),
+        radial-gradient(2px 2px at 180px 120px, #ffc0cb, transparent),
         radial-gradient(1px 1px at 50px 180px, rgba(255,255,255,0.7), transparent),
-        radial-gradient(1.5px 1.5px at 120px 10px, #fff, transparent);
+        radial-gradient(1.5px 1.5px at 120px 10px, #ffb6c1, transparent);
     background-repeat: repeat;
     background-size: 200px 200px;
     animation: twinkle 6s ease-in-out infinite alternate;
@@ -83,7 +83,7 @@ body::before {
     position: absolute;
     width: 12px;
     height: 14px;
-    background: radial-gradient(ellipse at 30% 30%, #ffcdd9, #ffb7c5 60%, #ff9eb5);
+    background: radial-gradient(ellipse at 30% 30%, #ffd1dc, #ffb7c5 60%, #ff9eb5);
     border-radius: 50% 0 50% 50%;
     opacity: 0;
     animation: petal-fall linear forwards;
@@ -105,7 +105,7 @@ body::before {
     100% { opacity: 0; transform: translateY(105vh) rotate(360deg) translateX(-30px); }
 }
 
-/* ============ BOKEH ============ */
+/* ============ BOKEH (pink tones) ============ */
 .bokeh-container {
     position: fixed;
     top: 0;
@@ -124,14 +124,14 @@ body::before {
     animation: bokeh-float 12s ease-in-out infinite;
 }
 
-.b1 { width: 80px; height: 80px; background: radial-gradient(circle, rgba(255,107,107,0.15), transparent 70%); top: 10%; left: 5%; animation-delay: 0s; }
-.b2 { width: 120px; height: 120px; background: radial-gradient(circle, rgba(255,215,0,0.1), transparent 70%); top: 20%; right: 10%; animation-delay: -2s; }
-.b3 { width: 60px; height: 60px; background: radial-gradient(circle, rgba(255,133,162,0.18), transparent 70%); top: 50%; left: 15%; animation-delay: -4s; }
-.b4 { width: 100px; height: 100px; background: radial-gradient(circle, rgba(167,139,250,0.12), transparent 70%); top: 60%; right: 5%; animation-delay: -6s; }
-.b5 { width: 70px; height: 70px; background: radial-gradient(circle, rgba(255,183,197,0.15), transparent 70%); top: 80%; left: 30%; animation-delay: -8s; }
-.b6 { width: 90px; height: 90px; background: radial-gradient(circle, rgba(255,217,61,0.1), transparent 70%); top: 35%; right: 25%; animation-delay: -3s; }
-.b7 { width: 50px; height: 50px; background: radial-gradient(circle, rgba(255,107,107,0.12), transparent 70%); bottom: 15%; left: 60%; animation-delay: -5s; }
-.b8 { width: 110px; height: 110px; background: radial-gradient(circle, rgba(255,133,162,0.1), transparent 70%); top: 5%; left: 50%; animation-delay: -7s; }
+.b1 { width: 80px; height: 80px; background: radial-gradient(circle, rgba(255,105,180,0.18), transparent 70%); top: 10%; left: 5%; animation-delay: 0s; }
+.b2 { width: 120px; height: 120px; background: radial-gradient(circle, rgba(255,182,193,0.14), transparent 70%); top: 20%; right: 10%; animation-delay: -2s; }
+.b3 { width: 60px; height: 60px; background: radial-gradient(circle, rgba(255,133,162,0.2), transparent 70%); top: 50%; left: 15%; animation-delay: -4s; }
+.b4 { width: 100px; height: 100px; background: radial-gradient(circle, rgba(219,112,147,0.15), transparent 70%); top: 60%; right: 5%; animation-delay: -6s; }
+.b5 { width: 70px; height: 70px; background: radial-gradient(circle, rgba(255,192,203,0.18), transparent 70%); top: 80%; left: 30%; animation-delay: -8s; }
+.b6 { width: 90px; height: 90px; background: radial-gradient(circle, rgba(255,105,180,0.12), transparent 70%); top: 35%; right: 25%; animation-delay: -3s; }
+.b7 { width: 50px; height: 50px; background: radial-gradient(circle, rgba(255,182,193,0.15), transparent 70%); bottom: 15%; left: 60%; animation-delay: -5s; }
+.b8 { width: 110px; height: 110px; background: radial-gradient(circle, rgba(255,133,162,0.12), transparent 70%); top: 5%; left: 50%; animation-delay: -7s; }
 
 @keyframes bokeh-float {
     0%, 100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.6; }
@@ -152,7 +152,7 @@ body::before {
     padding: 20px;
 }
 
-/* ============ LANTERNS ============ */
+/* ============ LANTERNS (pink) ============ */
 .lanterns {
     position: fixed;
     top: 0;
@@ -177,21 +177,21 @@ body::before {
 .lantern-string {
     width: 2px;
     height: 30px;
-    background: #aa7733;
+    background: #e8a0bf;
 }
 
 .lantern-body {
     width: 50px;
     height: 65px;
-    background: linear-gradient(180deg, #ff3333, #cc0000, #ff3333);
+    background: linear-gradient(180deg, #ff69b4, #ff1493, #ff69b4);
     border-radius: 50% / 40%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 25px rgba(255, 50, 50, 0.5), 0 0 50px rgba(255, 50, 50, 0.2);
-    border-top: 3px solid #ffcc00;
-    border-bottom: 3px solid #ffcc00;
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.5), 0 0 50px rgba(255, 105, 180, 0.2);
+    border-top: 3px solid #ffb6c1;
+    border-bottom: 3px solid #ffb6c1;
 }
 
 .lantern-glow {
@@ -199,22 +199,22 @@ body::before {
     width: 100%;
     height: 100%;
     border-radius: 50% / 40%;
-    background: radial-gradient(circle, rgba(255,200,50,0.3) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,182,193,0.4) 0%, transparent 70%);
     animation: lantern-glow-pulse 2s ease-in-out infinite;
 }
 
 .lantern-text {
     font-size: 1.4rem;
-    color: #ffd700;
+    color: #fff;
     font-weight: 700;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    text-shadow: 0 0 8px rgba(255, 182, 193, 0.8);
     z-index: 1;
 }
 
 .lantern-tassel {
     width: 2px;
     height: 20px;
-    background: #ffcc00;
+    background: #ffb6c1;
     position: relative;
 }
 
@@ -225,7 +225,7 @@ body::before {
     left: -4px;
     width: 10px;
     height: 10px;
-    background: #ffcc00;
+    background: #ffb6c1;
     border-radius: 0 0 50% 50%;
 }
 
@@ -270,7 +270,7 @@ body::before {
     position: absolute;
     width: 130px;
     height: 130px;
-    border: 2px solid rgba(255, 215, 0, 0.3);
+    border: 2px solid rgba(255, 105, 180, 0.35);
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -283,7 +283,7 @@ body::before {
     position: absolute;
     width: 150px;
     height: 150px;
-    border: 1px dashed rgba(255, 215, 0, 0.15);
+    border: 1px dashed rgba(255, 182, 193, 0.2);
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -299,13 +299,13 @@ body::before {
     font-family: 'Playfair Display', serif;
     font-size: clamp(3rem, 8vw, 5rem);
     font-weight: 800;
-    background: linear-gradient(135deg, #ffd700, #ffec8b, #ffd700, #daa520);
+    background: linear-gradient(135deg, #ff69b4, #ffb6c1, #ff69b4, #ff1493);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: gradient-shift 4s ease infinite;
-    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.4));
+    filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.5));
     line-height: 1;
     letter-spacing: 8px;
 }
@@ -313,12 +313,12 @@ body::before {
 .year-label {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(0.9rem, 2vw, 1.2rem);
-    color: #ffd700;
+    color: #ffb6c1;
     letter-spacing: 12px;
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 5px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* ============ COUNTDOWN SECTION ============ */
@@ -333,13 +333,13 @@ body::before {
     font-family: 'Parisienne', cursive;
     font-size: clamp(2.2rem, 7vw, 5rem);
     margin-bottom: 12px;
-    background: linear-gradient(135deg, #ff85a2, #ffd93d, #ff6b6b, #ffb7c5);
+    background: linear-gradient(135deg, #ff69b4, #ffb6c1, #ff85a2, #ffc0cb);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: gradient-shift 5s ease infinite, float 4s ease-in-out infinite;
-    filter: drop-shadow(0 0 25px rgba(255, 133, 162, 0.4));
+    filter: drop-shadow(0 0 25px rgba(255, 105, 180, 0.5));
     line-height: 1.3;
 }
 
@@ -360,7 +360,7 @@ body::before {
 .subtitle {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.1rem, 2.8vw, 1.6rem);
-    color: #ffd93d;
+    color: #ffb6c1;
     margin-bottom: 40px;
     font-style: italic;
     font-weight: 500;
@@ -370,8 +370,8 @@ body::before {
 }
 
 @keyframes pulse-glow {
-    0%, 100% { text-shadow: 0 0 5px rgba(255,217,61,0.2); }
-    50% { text-shadow: 0 0 25px rgba(255,217,61,0.6), 0 0 50px rgba(255,217,61,0.2); }
+    0%, 100% { text-shadow: 0 0 5px rgba(255,182,193,0.2); }
+    50% { text-shadow: 0 0 25px rgba(255,105,180,0.6), 0 0 50px rgba(255,182,193,0.2); }
 }
 
 /* ============ COUNTDOWN TIMER ============ */
@@ -385,9 +385,9 @@ body::before {
 }
 
 .time-box {
-    background: rgba(255,255,255,0.06);
+    background: rgba(255, 182, 193, 0.08);
     backdrop-filter: blur(20px);
-    border: 1.5px solid rgba(255,215,0,0.25);
+    border: 1.5px solid rgba(255, 105, 180, 0.3);
     border-radius: 18px;
     padding: 18px 22px;
     min-width: 95px;
@@ -404,7 +404,7 @@ body::before {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(transparent, rgba(255,215,0,0.05), transparent 30%);
+    background: conic-gradient(transparent, rgba(255,105,180,0.06), transparent 30%);
     animation: spin 6s linear infinite;
 }
 
@@ -413,26 +413,26 @@ body::before {
 }
 
 .time-box:hover {
-    border-color: rgba(255,215,0,0.5);
+    border-color: rgba(255,105,180,0.5);
     transform: scale(1.06);
-    box-shadow: 0 0 30px rgba(255,215,0,0.15), 0 0 60px rgba(255,133,162,0.1);
+    box-shadow: 0 0 30px rgba(255,105,180,0.2), 0 0 60px rgba(255,182,193,0.1);
 }
 
 .time-box span {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.2rem, 5vw, 3.5rem);
     font-weight: 800;
-    color: #ffd700;
+    color: #ff69b4;
     display: block;
     position: relative;
     z-index: 1;
-    text-shadow: 0 0 10px rgba(255,215,0,0.3);
+    text-shadow: 0 0 10px rgba(255,105,180,0.4);
 }
 
 .time-box label {
     font-family: 'Cormorant Garamond', serif;
     font-size: 0.9rem;
-    color: #ffb7c5;
+    color: #ffb6c1;
     text-transform: uppercase;
     letter-spacing: 3px;
     display: block;
@@ -445,7 +445,7 @@ body::before {
 .time-separator {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    color: #ffd700;
+    color: #ff69b4;
     font-weight: 700;
     animation: blink 1s ease-in-out infinite;
     opacity: 0.8;
@@ -467,15 +467,15 @@ body::before {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #fff;
-    background: linear-gradient(135deg, #c0392b, #e74c3c, #ff6b6b);
+    background: linear-gradient(135deg, #ff1493, #ff69b4, #ff85a2);
     background-size: 200% 200%;
-    border: 2px solid rgba(255,215,0,0.3);
+    border: 2px solid rgba(255,182,193,0.4);
     border-radius: 60px;
     cursor: pointer;
     transition: all 0.4s ease;
     overflow: hidden;
     letter-spacing: 1.5px;
-    box-shadow: 0 8px 35px rgba(231,76,60,0.35);
+    box-shadow: 0 8px 35px rgba(255,20,147,0.35);
     animation: gradient-shift 3s ease infinite;
     margin-bottom: 20px;
 }
@@ -487,7 +487,7 @@ body::before {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #ff6b6b, #ffd700, #ff85a2, #ff6b6b);
+    background: linear-gradient(45deg, #ff69b4, #ffb6c1, #ff85a2, #ff69b4);
     background-size: 400% 400%;
     border-radius: 60px;
     z-index: -1;
@@ -498,8 +498,8 @@ body::before {
 
 .magic-btn:hover:not(:disabled) {
     transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 14px 45px rgba(231,76,60,0.5);
-    border-color: rgba(255,215,0,0.6);
+    box-shadow: 0 14px 45px rgba(255,20,147,0.5);
+    border-color: rgba(255,182,193,0.7);
 }
 
 .magic-btn:active:not(:disabled) {
@@ -507,7 +507,7 @@ body::before {
 }
 
 .magic-btn:disabled {
-    background: linear-gradient(135deg, #444, #2a2a2a, #555);
+    background: linear-gradient(135deg, #555, #3a3a3a, #666);
     cursor: not-allowed;
     box-shadow: none;
     animation: none;
@@ -523,8 +523,8 @@ body::before {
 }
 
 @keyframes pulse-button {
-    0%, 100% { transform: scale(1); box-shadow: 0 8px 35px rgba(231,76,60,0.35); }
-    50% { transform: scale(1.04); box-shadow: 0 12px 45px rgba(231,76,60,0.5); }
+    0%, 100% { transform: scale(1); box-shadow: 0 8px 35px rgba(255,20,147,0.35); }
+    50% { transform: scale(1.04); box-shadow: 0 12px 45px rgba(255,20,147,0.5); }
 }
 
 .btn-icon {
@@ -540,7 +540,7 @@ body::before {
 
 .notice {
     font-family: 'Cormorant Garamond', serif;
-    color: #ffb7c5;
+    color: #ffb6c1;
     font-size: 1.05rem;
     font-style: italic;
     font-weight: 500;
@@ -549,7 +549,7 @@ body::before {
 }
 
 .notice.ready-notice {
-    color: #ffd700;
+    color: #ff69b4;
     font-weight: 700;
     font-size: 1.2rem;
     animation: pulse-glow 1.5s ease-in-out infinite;
@@ -561,7 +561,7 @@ body::before {
     display: none !important;
 }
 
-/* ============ LETTER ENVELOPE ============ */
+/* ============ LETTER ENVELOPE (pink) ============ */
 .letter-envelope {
     width: 200px;
     height: 140px;
@@ -579,14 +579,14 @@ body::before {
 .envelope-body {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 12px 40px rgba(231,76,60,0.4);
+    box-shadow: 0 12px 40px rgba(255,20,147,0.4);
     position: relative;
-    border: 2px solid rgba(255,215,0,0.3);
+    border: 2px solid rgba(255,182,193,0.4);
 }
 
 .envelope-flap {
@@ -597,7 +597,7 @@ body::before {
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-top: 70px solid #a93226;
+    border-top: 70px solid #db2777;
     z-index: 2;
     transform-origin: top;
     animation: flap-open 1s ease-out 0.5s forwards;
@@ -627,20 +627,20 @@ body::before {
     margin: 0 auto;
     background:
         linear-gradient(180deg,
-            rgba(255,250,245,0.98) 0%,
-            rgba(255,245,238,0.96) 25%,
-            rgba(255,240,235,0.95) 50%,
-            rgba(255,235,230,0.96) 75%,
-            rgba(255,248,240,0.98) 100%
+            rgba(255,245,248,0.98) 0%,
+            rgba(255,240,245,0.96) 25%,
+            rgba(255,235,240,0.95) 50%,
+            rgba(255,230,238,0.96) 75%,
+            rgba(255,245,248,0.98) 100%
         );
     border-radius: 24px;
     padding: 55px 50px;
     color: #3a2a2a;
     position: relative;
     box-shadow:
-        0 25px 70px rgba(200,100,120,0.25),
-        0 0 0 1px rgba(255,182,193,0.3),
-        inset 0 0 100px rgba(255,200,210,0.08);
+        0 25px 70px rgba(255,105,180,0.2),
+        0 0 0 1px rgba(255,182,193,0.4),
+        inset 0 0 100px rgba(255,200,220,0.1);
     animation: letter-appear 1.5s ease-out;
     overflow: hidden;
 }
@@ -653,7 +653,7 @@ body::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, transparent, #e8a0bf, #ffd700, #e8a0bf, transparent);
+    background: linear-gradient(90deg, transparent, #ff69b4, #ffb6c1, #ff69b4, transparent);
     border-radius: 24px 24px 0 0;
 }
 
@@ -664,7 +664,7 @@ body::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, transparent, #e8a0bf, #ffd700, #e8a0bf, transparent);
+    background: linear-gradient(90deg, transparent, #ff69b4, #ffb6c1, #ff69b4, transparent);
     border-radius: 0 0 24px 24px;
 }
 
@@ -707,7 +707,7 @@ body::before {
     text-align: center;
     margin-bottom: 40px;
     padding-bottom: 25px;
-    border-bottom: 1px solid rgba(200,150,170,0.25);
+    border-bottom: 1px solid rgba(255,105,180,0.2);
 }
 
 .header-swirl-wrap {
@@ -732,13 +732,13 @@ body::before {
 }
 
 .deco-heart {
-    color: #d4577a;
+    color: #ff69b4;
     font-size: 1rem;
     animation: heartbeat 2s ease-in-out infinite;
 }
 
 .deco-star {
-    color: #d4a06a;
+    color: #ffb6c1;
     font-size: 0.8rem;
     animation: spin-slow 6s linear infinite;
 }
@@ -750,16 +750,16 @@ body::before {
 .letter-title {
     font-family: 'Parisienne', cursive;
     font-size: clamp(2rem, 5vw, 3.2rem);
-    color: #b83255;
+    color: #e91e8c;
     margin: 12px 0;
-    text-shadow: 0 2px 15px rgba(184,50,85,0.15);
+    text-shadow: 0 2px 15px rgba(233,30,140,0.15);
     line-height: 1.3;
 }
 
 .letter-subtitle {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1rem, 2.8vw, 1.4rem);
-    color: #c97b96;
+    color: #d4578e;
     font-weight: 600;
     font-style: italic;
     letter-spacing: 2px;
@@ -797,31 +797,31 @@ body::before {
 .letter-body .greeting {
     font-family: 'Parisienne', cursive;
     font-size: clamp(1.5rem, 3vw, 2rem);
-    color: #b83255;
+    color: #e91e8c;
     text-align: center;
     margin-bottom: 30px;
     font-weight: 400;
 }
 
 .letter-body em {
-    color: #a63d5a;
+    color: #d4578e;
     font-style: italic;
     font-weight: 500;
 }
 
 .letter-body strong {
-    color: #9c2c4c;
+    color: #c0246e;
     font-weight: 700;
 }
 
 .highlight-love {
     font-family: 'Parisienne', cursive;
     font-size: 1.6rem;
-    background: linear-gradient(135deg, #c0392b, #e74c3c, #ff6b6b);
+    background: linear-gradient(135deg, #ff1493, #ff69b4, #ff85a2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 0 4px rgba(231,76,60,0.3));
+    filter: drop-shadow(0 0 4px rgba(255,20,147,0.3));
 }
 
 /* ============ LETTER DIVIDER ============ */
@@ -837,7 +837,7 @@ body::before {
     display: block;
     width: 80px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #d4a0b9, transparent);
+    background: linear-gradient(90deg, transparent, #ff69b4, transparent);
 }
 
 .divider-icon {
@@ -848,25 +848,25 @@ body::before {
 /* ============ THANK YOU CARD ============ */
 .thank-you-card {
     background: linear-gradient(135deg,
-        rgba(255,220,230,0.4),
-        rgba(255,235,238,0.5),
-        rgba(255,220,230,0.4)
+        rgba(255,182,193,0.25),
+        rgba(255,240,245,0.4),
+        rgba(255,182,193,0.25)
     );
     border-radius: 18px;
     padding: 25px 30px;
     margin: 25px 0;
-    border: 1px solid rgba(200,150,170,0.2);
+    border: 1px solid rgba(255,105,180,0.2);
     position: relative;
 }
 
 .thank-you-card::before {
-    content: '"';
+    content: '\201C';
     position: absolute;
     top: -10px;
     left: 20px;
     font-family: 'Parisienne', cursive;
     font-size: 4rem;
-    color: rgba(184,50,85,0.15);
+    color: rgba(255,20,147,0.15);
     line-height: 1;
 }
 
@@ -874,7 +874,7 @@ body::before {
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    color: #8a3a55;
+    color: #c0246e;
     font-size: 1.15rem;
     line-height: 2.4;
     font-weight: 600;
@@ -883,21 +883,21 @@ body::before {
 /* ============ WISHES LIST ============ */
 .wishes-list {
     background: linear-gradient(135deg,
-        rgba(255,220,230,0.3),
-        rgba(255,240,245,0.4),
-        rgba(255,220,230,0.3)
+        rgba(255,182,193,0.2),
+        rgba(255,240,245,0.35),
+        rgba(255,182,193,0.2)
     );
     border-radius: 18px;
     padding: 28px 35px;
     margin: 28px 0;
-    border-left: 4px solid #d4577a;
+    border-left: 4px solid #ff69b4;
     position: relative;
 }
 
 .wishes-list h4 {
     font-family: 'Parisienne', cursive;
     font-size: 1.5rem;
-    color: #b83255;
+    color: #e91e8c;
     margin-bottom: 18px;
 }
 
@@ -919,7 +919,7 @@ body::before {
 
 .wishes-list li:hover {
     transform: translateX(12px);
-    color: #b83255;
+    color: #e91e8c;
 }
 
 .wish-icon {
@@ -948,14 +948,14 @@ body::before {
     font-size: 3rem;
     display: inline-block;
     animation: heartbeat 1.4s ease-in-out infinite;
-    filter: drop-shadow(0 0 12px rgba(231,76,60,0.4));
+    filter: drop-shadow(0 0 12px rgba(255,20,147,0.4));
 }
 
 .love-ending {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #b83255;
+    color: #e91e8c;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
@@ -963,9 +963,9 @@ body::before {
 .final-wish {
     font-family: 'Parisienne', cursive;
     font-size: clamp(1.4rem, 3.5vw, 2rem);
-    color: #c0392b;
+    color: #ff1493;
     animation: heartbeat 2s ease-in-out infinite;
-    filter: drop-shadow(0 0 6px rgba(192,57,43,0.2));
+    filter: drop-shadow(0 0 6px rgba(255,20,147,0.2));
 }
 
 /* ============ LETTER FOOTER ============ */
@@ -1013,22 +1013,22 @@ body::before {
     to { opacity: 0; transform: translateY(-30px); }
 }
 
-/* ============ SCROLLBAR ============ */
+/* ============ SCROLLBAR (pink) ============ */
 ::-webkit-scrollbar {
     width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1a0025;
+    background: #2d1b33;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #d4577a, #e8a0bf);
+    background: linear-gradient(180deg, #ff69b4, #ffb6c1);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #b83255, #d4577a);
+    background: linear-gradient(180deg, #ff1493, #ff69b4);
 }
 
 /* ============ RESPONSIVE ============ */
@@ -1065,7 +1065,7 @@ body::before {
     .envelope-flap {
         border-left: 75px solid transparent;
         border-right: 75px solid transparent;
-        border-top: 50px solid #a93226;
+        border-top: 50px solid #db2777;
     }
 
     .lantern-left { left: 10px; }

@@ -17,10 +17,13 @@ class FireworksEngine {
     createRocket() {
         const x = Math.random() * this.canvas.width;
         const targetY = this.canvas.height * (0.08 + Math.random() * 0.35);
+        // Pink-ish hue range: 300-360 (magenta/pink) and 0-20 (red-pink)
+        const pinkHues = [310, 320, 330, 340, 345, 350, 355, 0, 5, 10, 15];
+        const hue = pinkHues[Math.floor(Math.random() * pinkHues.length)] + (Math.random() * 15 - 7);
         this.rockets.push({
             x, y: this.canvas.height,
             targetY, speed: 4 + Math.random() * 3,
-            trail: [], hue: Math.random() * 360
+            trail: [], hue
         });
     }
 
@@ -118,7 +121,7 @@ class FireworksEngine {
 
     draw() {
         this.ctx.globalCompositeOperation = 'source-over';
-        this.ctx.fillStyle = 'rgba(10, 0, 21, 0.14)';
+        this.ctx.fillStyle = 'rgba(45, 27, 51, 0.14)';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
         this.ctx.globalCompositeOperation = 'lighter';
 
@@ -202,8 +205,8 @@ class FireworksEngine {
 class ParticleGenerator {
     constructor(container) {
         this.container = container;
-        this.sparkleColors = ['#ff6b6b', '#ffd93d', '#ff85a2', '#ffb7c5',
-                              '#a29bfe', '#fd79a8', '#ffeaa7', '#74b9ff'];
+        this.sparkleColors = ['#ff69b4', '#ffb6c1', '#ff85a2', '#ffc0cb',
+                              '#ff1493', '#fd79a8', '#ffd1dc', '#ff9eb5'];
     }
 
     start() {
@@ -252,7 +255,7 @@ class ParticleGenerator {
 class FloatingHearts {
     constructor(container) {
         this.container = container;
-        this.items = ['❤️', '💕', '💗', '💖', '💝', '🌹', '🌸', '✨', '💫'];
+        this.items = ['❤️', '💕', '💗', '💖', '💝', '🌸', '🥰', '✨', '💋'];
     }
 
     start() {
@@ -319,10 +322,10 @@ class NewYearApp {
             btn.classList.add('ready');
 
             const notice = document.getElementById('btn-notice');
-            notice.textContent = '✨ Đã đến lúc rồi! Nhấn nút để mở thư chúc mừng năm mới! ✨';
+            notice.textContent = '✨ Đã đến lúc rồi! Nhấn nút để mở thư yêu thương nhé~ 🥰 ✨';
             notice.classList.add('ready-notice');
 
-            document.querySelector('.subtitle').textContent = 'Khoảnh khắc giao thừa đã đến!';
+            document.querySelector('.subtitle').textContent = 'Khoảnh khắc giao thừa đã đến rồi~ 🌸💕';
 
             clearInterval(this.countdownInterval);
             return;
