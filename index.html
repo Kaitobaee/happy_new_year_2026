@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Năm Mới 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Parisienne&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworks"></canvas>
+
+    <!-- Falling petals -->
+    <div id="sparkles"></div>
+
+    <!-- Bokeh lights -->
+    <div class="bokeh-container">
+        <div class="bokeh b1"></div>
+        <div class="bokeh b2"></div>
+        <div class="bokeh b3"></div>
+        <div class="bokeh b4"></div>
+        <div class="bokeh b5"></div>
+        <div class="bokeh b6"></div>
+        <div class="bokeh b7"></div>
+        <div class="bokeh b8"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-container">
+        <!-- Countdown Section -->
+        <div id="countdown-section">
+            <!-- Lantern decorations -->
+            <div class="lanterns">
+                <div class="lantern lantern-left">
+                    <div class="lantern-string"></div>
+                    <div class="lantern-body">
+                        <div class="lantern-glow"></div>
+                        <span class="lantern-text">福</span>
+                    </div>
+                    <div class="lantern-tassel"></div>
+                </div>
+                <div class="lantern lantern-right">
+                    <div class="lantern-string"></div>
+                    <div class="lantern-body">
+                        <div class="lantern-glow"></div>
+                        <span class="lantern-text">春</span>
+                    </div>
+                    <div class="lantern-tassel"></div>
+                </div>
+            </div>
+
+            <!-- Cherry blossom branches -->
+            <div class="cherry-branch top-left">
+                <svg viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,90 Q40,70 80,80 Q130,88 170,60 Q200,45 240,35" stroke="#8B6914" stroke-width="3" fill="none" opacity="0.5"/>
+                    <path d="M80,80 Q90,55 110,50" stroke="#8B6914" stroke-width="2" fill="none" opacity="0.4"/>
+                    <circle cx="55" cy="78" r="10" fill="#ffb7c5" opacity="0.7"/><circle cx="57" cy="76" r="6" fill="#ffd1dc"/>
+                    <circle cx="100" cy="72" r="12" fill="#ffb7c5" opacity="0.7"/><circle cx="102" cy="70" r="7" fill="#ffd1dc"/>
+                    <circle cx="110" cy="50" r="8" fill="#ffb7c5" opacity="0.6"/><circle cx="111" cy="49" r="5" fill="#ffd1dc"/>
+                    <circle cx="145" cy="66" r="9" fill="#ffb7c5" opacity="0.7"/><circle cx="147" cy="64" r="5" fill="#ffd1dc"/>
+                    <circle cx="185" cy="50" r="11" fill="#ffb7c5" opacity="0.6"/><circle cx="187" cy="48" r="6" fill="#ffd1dc"/>
+                    <circle cx="225" cy="38" r="8" fill="#ffb7c5" opacity="0.5"/><circle cx="226" cy="37" r="5" fill="#ffd1dc"/>
+                    <circle cx="30" cy="86" r="7" fill="#ffb7c5" opacity="0.5"/>
+                </svg>
+            </div>
+            <div class="cherry-branch top-right">
+                <svg viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M250,90 Q210,65 170,75 Q120,85 80,55 Q50,40 10,30" stroke="#8B6914" stroke-width="3" fill="none" opacity="0.5"/>
+                    <path d="M170,75 Q160,50 140,45" stroke="#8B6914" stroke-width="2" fill="none" opacity="0.4"/>
+                    <circle cx="195" cy="72" r="10" fill="#ffb7c5" opacity="0.7"/><circle cx="193" cy="70" r="6" fill="#ffd1dc"/>
+                    <circle cx="150" cy="68" r="12" fill="#ffb7c5" opacity="0.7"/><circle cx="148" cy="66" r="7" fill="#ffd1dc"/>
+                    <circle cx="140" cy="45" r="8" fill="#ffb7c5" opacity="0.6"/><circle cx="139" cy="44" r="5" fill="#ffd1dc"/>
+                    <circle cx="105" cy="62" r="9" fill="#ffb7c5" opacity="0.7"/><circle cx="103" cy="60" r="5" fill="#ffd1dc"/>
+                    <circle cx="65" cy="48" r="11" fill="#ffb7c5" opacity="0.6"/><circle cx="63" cy="46" r="6" fill="#ffd1dc"/>
+                    <circle cx="30" cy="35" r="8" fill="#ffb7c5" opacity="0.5"/><circle cx="29" cy="34" r="5" fill="#ffd1dc"/>
+                    <circle cx="225" cy="82" r="7" fill="#ffb7c5" opacity="0.5"/>
+                </svg>
+            </div>
+
+            <div class="year-badge">
+                <div class="year-ring"></div>
+                <span class="year-number">2026</span>
+                <span class="year-label">NĂM MỚI</span>
+            </div>
+
+            <h1 class="title glow-text">Chúc Mừng Năm Mới</h1>
+            <p class="subtitle">Đếm ngược đến khoảnh khắc giao thừa...</p>
+
+            <div id="countdown-timer">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <label>Ngày</label>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <label>Giờ</label>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <label>Phút</label>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <label>Giây</label>
+                </div>
+            </div>
+
+            <button id="open-letter-btn" class="magic-btn" disabled>
+                <span class="btn-icon">💌</span>
+                <span class="btn-text">Mở Thư Tình Năm Mới</span>
+                <span class="btn-icon">💌</span>
+            </button>
+            <p id="btn-notice" class="notice">Hãy đợi đến 00:00 ngày 17/02/2026 để mở thư nhé! 💕</p>
+        </div>
+
+        <!-- Letter Section (Hidden initially) -->
+        <div id="letter-section" class="hidden">
+            <div class="letter-envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <span class="envelope-heart">💌</span>
+                </div>
+            </div>
+            <div class="letter-container" id="letter-container">
+                <!-- Corner floral decorations -->
+                <div class="corner-deco corner-tl">
+                    <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5,75 Q5,5 75,5" stroke="#e8a0bf" stroke-width="2" fill="none"/>
+                        <circle cx="15" cy="15" r="8" fill="#ffb7c5" opacity="0.5"/>
+                        <circle cx="16" cy="14" r="4" fill="#ffd1dc" opacity="0.8"/>
+                        <circle cx="35" cy="8" r="6" fill="#ffb7c5" opacity="0.4"/>
+                        <circle cx="8" cy="40" r="6" fill="#ffb7c5" opacity="0.4"/>
+                    </svg>
+                </div>
+                <div class="corner-deco corner-tr">
+                    <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M75,75 Q75,5 5,5" stroke="#e8a0bf" stroke-width="2" fill="none"/>
+                        <circle cx="65" cy="15" r="8" fill="#ffb7c5" opacity="0.5"/>
+                        <circle cx="64" cy="14" r="4" fill="#ffd1dc" opacity="0.8"/>
+                        <circle cx="45" cy="8" r="6" fill="#ffb7c5" opacity="0.4"/>
+                        <circle cx="72" cy="40" r="6" fill="#ffb7c5" opacity="0.4"/>
+                    </svg>
+                </div>
+                <div class="corner-deco corner-bl">
+                    <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5,5 Q5,75 75,75" stroke="#e8a0bf" stroke-width="2" fill="none"/>
+                        <circle cx="15" cy="65" r="8" fill="#ffb7c5" opacity="0.5"/>
+                        <circle cx="16" cy="66" r="4" fill="#ffd1dc" opacity="0.8"/>
+                        <circle cx="35" cy="72" r="6" fill="#ffb7c5" opacity="0.4"/>
+                        <circle cx="8" cy="40" r="6" fill="#ffb7c5" opacity="0.4"/>
+                    </svg>
+                </div>
+                <div class="corner-deco corner-br">
+                    <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M75,5 Q75,75 5,75" stroke="#e8a0bf" stroke-width="2" fill="none"/>
+                        <circle cx="65" cy="65" r="8" fill="#ffb7c5" opacity="0.5"/>
+                        <circle cx="64" cy="66" r="4" fill="#ffd1dc" opacity="0.8"/>
+                        <circle cx="45" cy="72" r="6" fill="#ffb7c5" opacity="0.4"/>
+                        <circle cx="72" cy="40" r="6" fill="#ffb7c5" opacity="0.4"/>
+                    </svg>
+                </div>
+
+                <!-- Rose border top -->
+                <div class="rose-border">
+                    <span>🌹</span><span>🌸</span><span>🌹</span><span>🌸</span><span>🌹</span><span>🌸</span><span>🌹</span>
+                </div>
+
+                <div class="letter-header">
+                    <div class="header-swirl-wrap">
+                        <svg viewBox="0 0 400 30" xmlns="http://www.w3.org/2000/svg" class="header-swirl">
+                            <path d="M0,15 Q50,0 100,15 Q150,30 200,15 Q250,0 300,15 Q350,30 400,15" stroke="#d4a0b9" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="hearts-decoration">
+                        <span class="deco-heart">♥</span>
+                        <span class="deco-star">✦</span>
+                        <span class="deco-heart">♥</span>
+                    </div>
+                    <h2 class="letter-title">Lời Chúc Năm Mới 2026</h2>
+                    <h3 class="letter-subtitle">Gửi đến em — Người con gái anh yêu nhất</h3>
+                    <div class="hearts-decoration">
+                        <span class="deco-heart">♥</span>
+                        <span class="deco-star">✦</span>
+                        <span class="deco-heart">♥</span>
+                    </div>
+                    <div class="header-swirl-wrap">
+                        <svg viewBox="0 0 400 30" xmlns="http://www.w3.org/2000/svg" class="header-swirl">
+                            <path d="M0,15 Q50,30 100,15 Q150,0 200,15 Q250,30 300,15 Q350,0 400,15" stroke="#d4a0b9" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="letter-body">
+                    <p class="greeting">Em yêu à,</p>
+
+                    <p>Vậy là một năm nữa lại khép lại. Thời gian trôi nhanh thật, mới ngày nào mình còn chúc nhau năm mới 2025, vậy mà bây giờ anh lại đang ngồi đây, viết những dòng này cho năm 2026. Một năm mới lại đến, và trong khoảnh khắc chuyển giao giữa cũ và mới ấy, <em>điều đầu tiên anh nghĩ đến vẫn là em.</em></p>
+
+                    <p>Cảm ơn em vì đã xuất hiện trong cuộc đời anh. Cảm ơn em vì đã yêu anh, tin anh, ở bên anh dù có những lúc anh chưa hoàn hảo, chưa đủ tốt, chưa đủ trưởng thành. Nhưng chính vì có em mà anh muốn trở nên tốt hơn mỗi ngày.</p>
+
+                    <p>Năm 2026 này, anh không chỉ muốn chúc em những điều tốt đẹp như mọi người vẫn chúc nhau. <strong>Anh muốn chúc em bằng cả trái tim của anh.</strong></p>
+
+                    <div class="letter-divider">
+                        <span class="divider-line"></span>
+                        <span class="divider-icon">🌸</span>
+                        <span class="divider-line"></span>
+                    </div>
+
+                    <p>Anh chúc em một năm mới thật nhiều <strong>sức khỏe</strong>. Có sức khỏe để học tập thật tốt, để theo đuổi những ước mơ của mình, để cười thật nhiều, và để còn ở bên anh thật lâu. Anh mong mỗi sáng em thức dậy đều cảm thấy nhẹ nhàng, bình yên và có động lực cho một ngày mới.</p>
+
+                    <p>Anh chúc em luôn <strong>xinh đẹp</strong>. Không phải chỉ là vẻ ngoài, mà là sự xinh đẹp trong tâm hồn – sự dịu dàng, ấm áp và đáng yêu mà chỉ riêng em có. Với anh, em luôn là người con gái đặc biệt nhất. Dù năm 2026 có mang đến cho em bao nhiêu thay đổi, anh mong em vẫn giữ được nụ cười ấy – <em>nụ cười làm tim anh rung động ngay từ lần đầu tiên.</em></p>
+
+                    <p>Anh chúc em <strong>học tập thật tốt</strong> trong năm mới này. Dù có những bài khó, những kỳ thi áp lực, anh mong em luôn vững vàng và tự tin. Anh tin vào khả năng của em. Và nếu có lúc nào em mệt mỏi, em nhớ rằng <em>phía sau em luôn có anh.</em></p>
+
+                    <div class="letter-divider">
+                        <span class="divider-line"></span>
+                        <span class="divider-icon">🌷</span>
+                        <span class="divider-line"></span>
+                    </div>
+
+                    <p>Năm 2026, anh mong mình sẽ cùng nhau trưởng thành hơn. Không chỉ là yêu nhau theo cảm xúc, mà là yêu nhau bằng sự thấu hiểu, bao dung và trách nhiệm. Anh muốn chúng ta không chỉ là người yêu, mà còn là <strong>người bạn đồng hành</strong>, là chỗ dựa tinh thần của nhau.</p>
+
+                    <p>Anh mong trong năm mới này, mình sẽ có thêm thật nhiều kỷ niệm. Những lần đi chơi cùng nhau. Những lần giận dỗi rồi lại làm hòa. Những buổi nói chuyện đến khuya. Những tin nhắn quan tâm mỗi sáng mỗi tối. Những cái nắm tay thật chặt giữa dòng người đông đúc. Và cả những lần cãi nhau, để rồi hiểu nhau hơn.</p>
+
+                    <p>Anh biết tình yêu không phải lúc nào cũng màu hồng. Sẽ có lúc hiểu lầm, sẽ có lúc buồn, sẽ có lúc anh vô tâm hoặc em suy nghĩ nhiều. Nhưng năm 2026 này, <strong>anh hứa sẽ cố gắng lắng nghe em nhiều hơn, quan tâm em nhiều hơn và yêu em theo cách khiến em cảm thấy an toàn nhất.</strong></p>
+
+                    <p>Anh mong rằng trong năm mới này, em sẽ luôn cảm thấy mình được yêu thương. Không chỉ bởi anh, mà bởi gia đình, bạn bè và tất cả những người xung quanh. <em>Em xứng đáng với những điều tốt đẹp nhất.</em></p>
+
+                    <div class="letter-divider">
+                        <span class="divider-line"></span>
+                        <span class="divider-icon">💫</span>
+                        <span class="divider-line"></span>
+                    </div>
+
+                    <p>Nếu có một điều ước cho năm 2026, anh chỉ ước rằng <strong>chúng ta vẫn còn ở bên nhau khi năm 2027 đến</strong>. Vẫn nắm tay nhau. Vẫn gọi nhau bằng những cái tên thân thương. Vẫn cùng nhau chia sẻ mọi niềm vui và nỗi buồn.</p>
+
+                    <p>Anh không biết tương lai sẽ ra sao. Nhưng ở hiện tại, anh biết rõ một điều: <strong class="highlight-love">anh yêu em</strong>. Và tình cảm đó là thật lòng.</p>
+
+                    <p>Năm 2026, anh không hứa sẽ cho em cả thế giới. Nhưng <strong>anh hứa sẽ cố gắng hết sức để cho em một góc bình yên trong thế giới của anh.</strong></p>
+
+                    <p>Anh mong em sẽ mạnh mẽ hơn, tự tin hơn và hạnh phúc hơn. Và anh hy vọng mình sẽ là một phần trong hạnh phúc đó.</p>
+
+                    <div class="letter-divider">
+                        <span class="divider-line"></span>
+                        <span class="divider-icon">🌹</span>
+                        <span class="divider-line"></span>
+                    </div>
+
+                    <div class="thank-you-card">
+                        <p class="thank-you">
+                            Cảm ơn em vì đã đến bên anh.<br>
+                            Cảm ơn em vì đã chọn anh.<br>
+                            Cảm ơn em vì đã cho anh biết thế nào là yêu thật sự.
+                        </p>
+                    </div>
+
+                    <div class="wishes-list">
+                        <h4>Chúc em một năm 2026:</h4>
+                        <ul>
+                            <li><span class="wish-icon">🌸</span> Tràn đầy sức khỏe</li>
+                            <li><span class="wish-icon">🌸</span> Ngập tràn niềm vui</li>
+                            <li><span class="wish-icon">🌸</span> Học tập thật tốt</li>
+                            <li><span class="wish-icon">🌸</span> Luôn xinh đẹp và rạng rỡ</li>
+                            <li><span class="wish-icon">🌸</span> Và yêu anh nhiều hơn một chút so với năm 2025</li>
+                        </ul>
+                    </div>
+
+                    <div class="love-section">
+                        <div class="big-heart-container">
+                            <div class="big-heart">❤️</div>
+                        </div>
+                        <p class="love-ending">Anh yêu em rất nhiều.</p>
+                        <p class="final-wish">Chúc mừng năm mới 2026, người con gái của anh ❤️</p>
+                    </div>
+                </div>
+
+                <!-- Rose border bottom -->
+                <div class="rose-border bottom">
+                    <span>🌹</span><span>🌸</span><span>🌹</span><span>🌸</span><span>🌹</span><span>🌸</span><span>🌹</span>
+                </div>
+
+                <div class="letter-footer">
+                    <div class="floating-hearts" id="floating-hearts"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
